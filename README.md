@@ -1,4 +1,32 @@
+---
+license: cc-by-2.0
+language:
+- th
+task_categories:
+- token-classification
+tags:
+- thai
+- thai-nlp
+- sentence-segmentation
+- sentence-boundary-detection
+pretty_name: Thai Sentence Boundaries (permissive gold set)
+size_categories:
+- n<1K
+configs:
+- config_name: default
+  data_files:
+  - split: test
+    path: data/all.jsonl
+---
+
 # Thai Sentence Boundaries — a small permissive gold set
+
+> **Licensing note (repo label vs. per-record).** This card is labeled
+> `cc-by-2.0` as the single most-binding license across the set so downstream use
+> is always safe; **most records are actually CC0** (see the `license` field on
+> each row and the [License & attribution](#license--attribution) section). Only
+> the `tatoeba_synth` split carries CC-BY (attribute Tatoeba); everything else is
+> public-domain / CC0.
 
 A small, **fully permissive** gold set of **Thai sentence boundaries** — 905
 hand-verified sentences across **8 registers**, released so anyone can evaluate
