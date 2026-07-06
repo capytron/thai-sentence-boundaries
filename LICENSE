@@ -1,0 +1,31 @@
+Thai Sentence Boundaries — licensing
+====================================
+
+This dataset is a mix of two permissive licenses, tracked per record via the
+"license" field in each JSONL row. There are NO non-commercial (NC),
+no-derivatives (ND), share-alike (SA), or gated components.
+
+1. CC0 1.0 Universal (public-domain dedication)
+   Applies to: every record with "license": "CC0-1.0" — all hand-written
+   register sets (formal_news, academic_legal, novel_dialogue, social_chat,
+   poetry_lyrics, tricky_tokens) and handgold_prose.
+   The full CC0 legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+   You may copy, modify, distribute, and use these, even commercially, with no
+   attribution required.
+
+   Note on handgold_prose source texts: the underlying passages are public
+   domain — classical Thai literature that is out of copyright by age, and Thai
+   statutes/regulations, which are excluded from copyright under the Thai
+   Copyright Act B.E. 2537, Section 7. The sentence-boundary annotation is our
+   original work, dedicated to the public domain under CC0.
+
+2. CC BY 2.0 FR (Attribution)
+   Applies to: every record with "license": "CC-BY-2.0-FR" — the tatoeba_synth
+   split. The sentence *text* comes from Tatoeba (https://tatoeba.org),
+   licensed CC-BY 2.0 FR; you must attribute Tatoeba when you use this split.
+   The full CC BY 2.0 FR text: https://creativecommons.org/licenses/by/2.0/fr/legalcode
+   The document concatenation and boundary annotation are our original work
+   (CC0), but the underlying sentences remain Tatoeba's under CC-BY.
+
+Filter by the "license" field if you need a strictly CC0-only subset
+(the CC0 records are fully unrestricted).
